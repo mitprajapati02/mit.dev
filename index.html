@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Premium SEO Meta Tags -->
+  <title>MIT's Portfolio | Full Stack Developer & AI Enthusiast</title>
+  <meta name="description"
+    content="Mit is a software developer and Computer Science undergraduate. Explore his portfolio featuring 3D interactive interfaces, tabbed resume timelines." />
+  <meta name="keywords"
+    content="MIT, Mit Prajapati, data analyst, software developer, frontend, full stack developer, 3d portfolio" />
+  <meta name="author" content="MITKUMAR PRAJAPATI" />
+  <meta name="theme-color" content="#101010" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="https://api.dicebear.com/7.x/pixel-art/svg?seed=mit" />
+
+  <!-- Premium Google Fonts Pairing (Outfit for headings/body, Fredoka for widgets) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Outfit:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+</head>
+
+<body>
+  <!-- Floating Glass Navigation Bar -->
+  <header class="navbar-wrapper">
+    <div class="navbar-container" id="nav-container">
+      <nav aria-label="Desktop Navigation" class="nav-links">
+        <ul id="nav-list">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false"
+        role="button" tabindex="0">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+    </div>
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+      <div class="intro-card animate-fadeIn">
+        <div class="intro-content">
+          <div class="profile-header">
+            <div class="profile-image-container">
+              <img src="/images/avatar.jpeg" alt="MITKUMAR PRAJAPATI" class="profile-avatar" id="profile-pfp"
+                onerror="this.src='https://api.dicebear.com/7.x/pixel-art/svg?seed=mit'" />
+            </div>
+            <div class="profile-title-block">
+              <h1 id="name">MITKUMAR PRAJAPATI</h1>
+              <p class="subtitle">Full Stack Developer & AI Enthusiast</p>
+            </div>
+          </div>
+
+          <div class="greeting-block">
+            <span id="dynamic-greeting">Good day</span><span class="animated-cursor">|</span>!
+          </div>
+
+          <p class="description">
+            I'm a full-stack developer from Ahmedabad, India, currently pursuing an Integrated M.Sc. in IT at Gujarat
+            University. I
+            enjoy building scalable web applications, developer-focused tools, and modern user experiences using the
+            MERN stack. My
+            journey in web development, internships, and real-world projects has helped me grow as a problem solver and
+            collaborative developer.
+          </p>
+
+          <div class="socials-row">
+            <a href="https://github.com/mitprajapati02" target="_blank" class="social-icon" aria-label="GitHub">
+              <lottie-player src="/github.json" background="transparent" speed="1" loop autoplay
+                style="width: 40px; height: 40px; pointer-events: none;"></lottie-player>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/mit07/" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <lottie-player src="/linkdin.json" background="transparent" speed="1" loop autoplay
+                style="width: 40px; height: 40px; pointer-events: none;"></lottie-player>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/mit25779/" target="_blank" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.33 4 20 5.67 20 7.75v8.5C20 18.33 18.33 20 16.25 20h-8.5C5.67 20 4 18.33 4 16.25v-8.5C4 5.67 5.67 4 7.75 4zm8.75 1a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+              </svg>
+            </a>
+
+            <!-- Resume -->
+            <!-- <a href="/MIT-Resume.pdf" target="_blank" class="social-icon" aria-label="Resume">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zm0 2.5L18.5 9H14zM8 13h8v1.5H8zm0 3h8v1.5H8zm0-6h4v1.5H8z" />
+              </svg>
+            </a> -->
+            <a href="./src/fullstack_designed.html" target="_blank" class="social-icon" aria-label="Resume">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zm0 2.5L18.5 9H14zM8 13h8v1.5H8zm0 3h8v1.5H8zm0-6h4v1.5H8z" />
+              </svg>
+            </a>
+
+            <!-- Linktree -->
+            <a href="https://linktr.ee/MIT02" target="_blank" class="social-icon" aria-label="Linktree">
+              <!-- <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M13 3h-2v6H7l5 5 5-5h-4zm-2 13h2v5h-2z" fill="#43E660" />
+              </svg> -->
+              <svg fill="none" height="20px" width="20px" viewBox="0 0 28 28" class="animation_rotate__SBERF">
+                <path
+                  d="m15.7603 6.829 4.6725-4.80317 2.712 2.77734-4.9012 4.67248h6.8944v3.85565h-6.9271l4.9339 4.7922-2.712 2.7229-6.6983-6.731-6.69829 6.731-2.712-2.712 4.93387-4.7923h-6.92703v-3.86645h6.89436l-4.9012-4.67248 2.712-2.77734 4.67249 4.80317v-6.829h4.0516zm-4.0516 12.0243h4.0516v9.1489h-4.0516z"
+                  fill="#43E660"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network Separator Line -->
+    <div id="line-container" class="separator-line-container">
+      <div id="line" class="separator-line"></div>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-container scroll-mt">
+      <div class="section-divider">
+        <hr class="glow-divider" />
+      </div>
+
+      <div class="tabs-container">
+        <!-- Tab Headers -->
+        <div class="tab-list" role="tablist" aria-label="Professional Experience & Education">
+          <button class="tab-trigger active" role="tab" aria-selected="true" aria-controls="experience-panel"
+            id="tab-experience" tabindex="0">Experience</button>
+          <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="education-panel"
+            id="tab-education" tabindex="-1">Education</button>
+          <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="extracurricular-panel"
+            id="tab-extracurricular" tabindex="-1">Extracurricular</button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tab-panels">
+          <!-- Experience Timeline -->
+          <div class="tab-panel active" id="experience-panel" role="tabpanel" aria-labelledby="tab-experience">
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+
+              <div class="timeline-content">
+                <h3>Web Development Intern</h3>
+
+                <p class="timeline-meta">
+                  <span class="meta-date">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      width="14" height="14">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Feb 2025 - Apr 2025
+                  </span>
+
+                  <span class="meta-loc">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      width="14" height="14">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Remote
+                  </span>
+                </p>
+
+                <ul class="bullets">
+                  <li>Worked on modern web application development using frontend and backend technologies.</li>
+
+                  <li>Built responsive UI components and improved application performance and user experience.</li>
+
+                  <li>Collaborated with developers using Git, APIs, and real-world development workflows.</li>
+
+                  <li>Gained hands-on experience with scalable web applications and production-ready code practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="tab-panel" id="education-panel" role="tabpanel" aria-labelledby="tab-education" hidden>
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+
+              <div class="timeline-content">
+                <h3>Integrated M.Sc. in IT – Data Management & Visual Insights</h3>
+
+                <p class="timeline-meta">
+                  <span class="meta-date">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      width="14" height="14">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    2023 - 2026
+                  </span>
+
+                  <span class="meta-loc">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      width="14" height="14">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Centre for Professional Courses,Gujarat University, Ahmedabad
+                  </span>
+                </p>
+
+                <ul class="bullets">
+                  <li>Studying Data Management, Web Application Development, and Visual Data Analytics in a 5-year
+                    integrated IT
+                    program.</li>
+
+                  <li>Learning MERN Stack Development, Database Management using SQL, UI/UX Design, and ERP-integrated
+                    application
+                    development.</li>
+
+                  <li>Exploring Data Science, Machine Learning, Artificial Intelligence, Big Data Engineering, and
+                    Business
+                    Analytics.</li>
+
+                  <li>Building analytical and scalable web applications with real-time data insights and modern
+                    full-stack
+                    technologies.</li>
+
+                  <li>Working with technologies including React.js, Node.js, MongoDB, MySQL, Python, and cloud-based
+                    development
+                    tools.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extracurricular Timeline -->
+          <div class="tab-panel" id="extracurricular-panel" role="tabpanel" aria-labelledby="tab-extracurricular"
+            hidden>
+
+            <div class="timeline-item">
+
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+
+              <div class="timeline-content">
+
+                <h3>Continuous Learning & Technical Exploration</h3>
+
+                <p class="timeline-meta">
+
+                  <span class="meta-date">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      width="14" height="14">
+
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+
+                    2023 - Present
+                  </span>
+                </p>
+
+                <ul class="bullets">
+
+                  <li>Continuously learning modern technologies including Full-Stack Development, Artificial
+                    Intelligence, Machine
+                    Learning, Cloud Computing, and scalable backend systems.</li>
+
+                  <li>Exploring IoT-based project development and experimenting with real-world automation and smart
+                    system
+                    integration.</li>
+
+                  <li>Currently working on building a complete POS (Point of Sale) software system to gain deeper
+                    understanding of
+                    analytics, prediction systems, and business workflows.</li>
+
+                  <li>Regularly practicing swimming and cycling to maintain discipline, consistency, focus, and a
+                    healthy
+                    lifestyle alongside technical growth.</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container scroll-mt">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 : VidyaSetu -->
+        <article class="project-card left-card tilt-card" data-tilt>
+          <div class="project-image-container">
+
+            <img src="/images/vidyasetu.png" alt="VidyaSetu AI Prediction Platform"
+              class="project-img background-img" />
+
+            <img src="/images/vidyasetu.png" alt="VidyaSetu AI Prediction Platform"
+              class="project-img frontfacing-img" />
+
+            <div class="visit-overlay">
+              <a href="https://github.com/mitprajapati02/vidyasetu-sih" target="_blank" class="visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3>VidyaSetu – College Dropout AI Prediction</h3>
+
+            <p class="project-description">
+              An AI-powered student dropout prediction platform designed to identify academic risk factors using data
+              analytics and machine learning models, helping institutions improve student retention and decision-making.
+            </p>
+
+            <div class="tags-row">
+              <span class="tag-badge">React</span>
+              <span class="tag-badge">Python</span>
+              <span class="tag-badge">Machine Learning</span>
+              <span class="tag-badge">Data Analytics</span>
+            </div>
+
+            <div class="mobile-visit-container">
+              <a href="https://github.com/mitprajapati02/vidyasetu-sih" target="_blank" class="mobile-visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 : O-Saathi -->
+        <article class="project-card right-card tilt-card" data-tilt>
+          <div class="project-image-container">
+
+            <img src="/images/project-osaathi.png" alt="O-Saathi Photobooth" class="project-img background-img" />
+
+            <video class="project-video frontfacing-vid" loop muted playsinline autoplay>
+              <source src="\videos\osaathi-demo.mp4" type="video/mp4" />
+
+              <img src="/images/project-osaathi.png" alt="O-Saathi Photobooth" class="project-img" />
+            </video>
+
+            <div class="visit-overlay">
+              <a href="https://github.com/mitprajapati02/o-saathi-client" target="_blank" class="visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3>O-Saathi Photobooth</h3>
+
+            <p class="project-description">
+              A modern interactive photobooth web application that allows users to capture, customize, and share photos
+              with
+              real-time camera integration, responsive UI, and cloud-based media storage.
+            </p>
+
+            <div class="tags-row">
+              <span class="tag-badge">Vibe Coded</span>
+              <span class="tag-badge">React</span>
+              <span class="tag-badge">Node.js</span>
+              <span class="tag-badge">MongoDB</span>
+            </div>
+
+            <div class="mobile-visit-container">
+              <a href="https://github.com/mitprajapati02/o-saathi-client" target="_blank" class="mobile-visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 : AI Travel Planner -->
+        <article class="project-card left-card tilt-card" data-tilt>
+          <div class="project-image-container">
+
+            <img src="/images/project-travelplanner.png" alt="AI Travel Planner Agent"
+              class="project-img background-img" />
+
+            <img src="/images/project-travelplanner.png" alt="AI Travel Planner Agent"
+              class="project-img frontfacing-img" />
+
+            <div class="visit-overlay">
+              <a href="https://github.com/mitprajapati02/travel-planner-agent" target="_blank" class="visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3>AI Travel Planner Agent</h3>
+
+            <p class="project-description">
+              An intelligent AI-powered travel planning assistant that generates personalized trip itineraries,
+              destination
+              suggestions, and optimized travel plans using automation and AI APIs.
+            </p>
+
+            <div class="tags-row">
+              <span class="tag-badge">AI Agent</span>
+              <span class="tag-badge">Node.js</span>
+              <span class="tag-badge">OpenAI API</span>
+            </div>
+
+            <div class="mobile-visit-container">
+              <a href="https://github.com/mitprajapati02/travel-planner-agent" target="_blank" class="mobile-visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 : Craftora -->
+        <article class="project-card right-card tilt-card" data-tilt>
+          <div class="project-image-container">
+
+            <img src="/images/project-craftora.png" alt="Craftora Social Productivity App"
+              class="project-img background-img" />
+
+            <img src="/images/project-craftora.png" alt="Craftora Social Productivity App"
+              class="project-img frontfacing-img" />
+
+            <div class="visit-overlay">
+              <a href="https://github.com/mitprajapati02/CRAFTORA" target="_blank" class="visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3>Craftora</h3>
+
+            <p class="project-description">
+              A full-stack social productivity platform built with the MERN stack that helps users manage social media
+              tasks, reminders, and personalized to-do workflows through a scalable REST API architecture.
+            </p>
+
+            <div class="tags-row">
+              <span class="tag-badge">MERN Stack</span>
+              <span class="tag-badge">MongoDB</span>
+              <span class="tag-badge">REST API</span>
+            </div>
+
+            <div class="mobile-visit-container">
+              <a href="https://github.com/mitprajapati02/CRAFTORA" target="_blank" class="mobile-visit-btn">
+                Visit Project
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 : Full-Stack + AI Developer Activity Widget -->
+        <article class="project-card right-card widget-card">
+
+          <!-- Developer Activity Widget -->
+          <div class="project-image-container widget-container">
+
+            <div class="widget-window">
+
+              <div class="widget-header">
+                <span class="widget-hint">
+                  Full-Stack + AI Development Activity
+                </span>
+
+                <span class="widget-counter" id="dev-counter">
+                  0/0 Completed
+                </span>
+              </div>
+
+              <!-- Infinite Scroll Body -->
+              <div class="widget-scroll-body" id="dev-scroll-container">
+
+                <div class="scroll-lane lane-primary" id="scroll-lane-1">
+                  <!-- JS injects content -->
+                </div>
+
+                <div class="scroll-lane lane-secondary" id="scroll-lane-2">
+                  <!-- Duplicate content -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+
+            <h3>Developer Workflow Activity</h3>
+
+            <p class="project-description">
+              An interactive infinite-scrolling developer activity widget showcasing real-world full-stack development
+              workflows, AI integrations, machine learning experimentation, API systems, and modern software engineering
+              tasks.
+            </p>
+
+            <div class="tags-row">
+              <span class="tag-badge">MERN Stack</span>
+              <span class="tag-badge">Artificial Intelligence</span>
+              <span class="tag-badge">Machine Learning</span>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-container scroll-mt">
+      <h2 class="section-title">Technical Stack</h2>
+
+      <div class="skills-grid">
+
+        <!-- Skill Category -->
+        <div class="skill-category-card">
+          <h3>Frontend Development</h3>
+          <div class="skills-list">
+            <span class="skill-badge" style="--accent: #e34f26">HTML5</span>
+            <span class="skill-badge" style="--accent: #1572b6">CSS3</span>
+            <span class="skill-badge" style="--accent: #f7df1e">JavaScript</span>
+            <!-- <span class="skill-badge" style="--accent: #3178c6">TypeScript</span> -->
+            <span class="skill-badge" style="--accent: #61dafb">React.js</span>
+            <!-- <span class="skill-badge" style="--accent: #000000">Next.js</span> -->
+            <span class="skill-badge" style="--accent: #7952b3">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Skill Category -->
+        <div class="skill-category-card">
+          <h3>Backend & Database</h3>
+          <div class="skills-list">
+            <span class="skill-badge" style="--accent: #339933">Node.js</span>
+            <span class="skill-badge" style="--accent: #000000">Express.js</span>
+            <span class="skill-badge" style="--accent: #ff2d20">Laravel</span>
+            <span class="skill-badge" style="--accent: #777bb4">PHP</span>
+            <span class="skill-badge" style="--accent: #47a248">MongoDB</span>
+            <span class="skill-badge" style="--accent: #4479a1">MySQL</span>
+            <!-- <span class="skill-badge" style="--accent: #2d3748">Prisma ORM</span> -->
+          </div>
+        </div>
+
+        <!-- Skill Category -->
+        <div class="skill-category-card">
+          <h3>Cloud, AI & Tools</h3>
+          <div class="skills-list">
+            <span class="skill-badge" style="--accent: #3776ab">Python</span>
+            <!-- <span class="skill-badge" style="--accent: #ff9900">AWS</span> -->
+            <span class="skill-badge" style="--accent: #10a37f">AI/ML</span>
+            <span class="skill-badge" style="--accent: #f05032">Git</span>
+            <span class="skill-badge" style="--accent: #181717">GitHub</span>
+            <span class="skill-badge" style="--accent: #ff6c37">Postman</span>
+            <span class="skill-badge" style="--accent: #00c7b7">REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <form id="portfolio-contact-form" class="contact-form" novalidate>
+
+      <div class="form-group">
+        <input type="text" id="contact-name" name="name" required placeholder=" " />
+        <label for="contact-name">Your Name</label>
+        <span class="error-message">Please enter your name.</span>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="contact-email" name="email" required placeholder=" " />
+        <label for="contact-email">Email Address</label>
+        <span class="error-message">Please enter a valid email address.</span>
+      </div>
+
+      <div class="form-group">
+        <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+        <label for="contact-message">Your Message</label>
+        <span class="error-message">Please enter your message.</span>
+      </div>
+
+      <button type="submit" class="submit-btn" id="contact-submit-btn">
+        <span class="btn-text">Send Message</span>
+        <div class="btn-glow"></div>
+      </button>
+
+      <div class="form-feedback" id="form-feedback-message"></div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <p>&copy; <span id="current-year">2026</span> MIT PRAJAPATI.</p>
+    <a href="#home" class="back-to-top" aria-label="Back to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18"
+        height="18">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
