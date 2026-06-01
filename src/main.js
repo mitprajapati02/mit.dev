@@ -397,7 +397,6 @@ function setupContactForm() {
   const submitBtn = document.getElementById("contact-submit-btn");
   const btnText = submitBtn ? submitBtn.querySelector(".btn-text") : null;
   const feedback = document.getElementById("form-feedback-message");
-  const web3FormsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
   if (!form) return;
 
@@ -443,18 +442,6 @@ function setupContactForm() {
 
     try {
       const formData = new FormData(form);
-      if (web3FormsAccessKey) {
-        formData.set("access_key", web3FormsAccessKey);
-      }
-
-      if (!web3FormsAccessKey) {
-        feedback.className = "form-feedback error";
-        feedback.textContent = "Contact form is not configured.";
-        feedback.style.display = "block";
-        submitBtn.disabled = false;
-        btnText.textContent = "Send Message";
-        return;
-      }
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -503,6 +490,9 @@ function setupContactForm() {
     }
   });
 }
+
+// Initialize
+setupContactForm();
 
 // Initialize
 setupContactForm();
